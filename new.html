@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social media links</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        .links {
+            display: none;
+            margin-top: 20px;
+        }
+        .links a {
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .links a:hover {
+            background-color: #0056b3;
+        }
+        .show-links-btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        .show-links-btn:hover {
+            background-color: #218838;
+        }
+    </style>
+    <script>
+        function showLinks() {
+            document.getElementById('links').style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <h1>Important Links</h1>
+    <button class="show-links-btn" onclick="showLinks()">Click to See Links</button>
+    <div id="links" class="links">
+        <a href="https://link1.com">Link 1</a>
+        <a href="https://link2.com">Link 2</a>
+        <a href="https://link3.com">Link 3</a>
+        <a href="https://link4.com">Link 4</a>
+    </div>
+</body>
+</html>
